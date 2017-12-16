@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script src="/skin/js/jquery172.min.js" type="text/javascript"></script>
+<script src="/skin/js/slide.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="javascript">
+document.onkeydown=function(){if(event.ctrlKey){return false;}}
+document.onselectstart=function(){return false;}
+document.oncontextmenu=function(){return false;}
+</SCRIPT>
+</head>
+<body>
+<div class="logo"><img src="/skin/images/logo.png" /></div>
+<div style="float:left; width:100%;">
+  <div style="width:1101px; margin-left:auto; margin-right:auto;">
+    <div class="divNav" style="position:relative;z-index:9999;">
+      <ul>
+        <li class="nn1 cur" onclick="javascript:location.replace('/index.html')"></li>
+        <li class="nn2 " onclick="javascript:location.replace('/a/pinpailishi')"></li>
+        <li class="nn3 " onclick="javascript:location.replace('/a/gongsilinian')"></li>
+        <li class="nn4 " onclick="javascript:location.replace('/a/jingxuancaizhi')"></li>
+        <li class="nn5 " onclick="javascript:location.replace('/a/womendechanpin')" style="position:relative;"></li>
+        <li class="nn6 " onclick="javascript:location.replace('/a/shengchancuoshi')"></li>
+        <li class="nn7 " onclick="javascript:location.replace('/a/lianxiwomen')"></li>
+      </ul>
+      <script language="javascript">
+	$('.divNav ul li').hover(function(){
+	    $(this).find('.subnav').show();
+	},function(){
+	    $(this).find('.subnav').hide();
+	});
+	</script> 
+    </div>
+  </div>
+</div>
+<div class="box ibox">
+  <div class="slider">
+    <div class="bd">
+      <ul>
+        {dede:arclist typeid='7'}
+        <li><a><img src="[field:picname/]" /></a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+    <div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+  </div>
+  <script type="text/javascript">
+        jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );				
+        jQuery(".slider").hover(function(){ jQuery(this).find(".arrow").stop(true,true).fadeIn(300) },function(){ jQuery(this).find(".arrow").fadeOut(300) });				
+        jQuery(".slider").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",  autoPlay:true, vis:3, autoPage:true, trigger:"click",interTime:5000});	
+    </script> 
+</div>
+<div class="divFoot">
+  <div style="float:left; width:230px; height:40px; cursor:pointer;" onclick="window.open('http://www.dedemao.com/', '_blank')"></div>
+</div>
+</body>
+</html>

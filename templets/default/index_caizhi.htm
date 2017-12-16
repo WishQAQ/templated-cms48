@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script src="/skin/js/jquery172.min.js" type="text/javascript"></script>
+<script src="/skin/js/slide.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="javascript">
+document.onkeydown=function(){if(event.ctrlKey){return false;}}
+document.onselectstart=function(){return false;}
+document.oncontextmenu=function(){return false;}
+</SCRIPT>
+</head>
+<body>
+<div class="logo"><img src="/skin/images/logo.png" /></div>
+<div style="float:left; width:100%;">
+  <div style="width:1101px; margin-left:auto; margin-right:auto;">
+    <div class="divNav" style="position:relative;z-index:9999;">
+      <ul>
+        <li class="nn1 cur" onclick="javascript:location.replace('/index.html')"></li>
+        <li class="nn2 " onclick="javascript:location.replace('/a/pinpailishi')"></li>
+        <li class="nn3 " onclick="javascript:location.replace('/a/gongsilinian')"></li>
+        <li class="nn4 " onclick="javascript:location.replace('/a/jingxuancaizhi')"></li>
+        <li class="nn5 " onclick="javascript:location.replace('/a/womendechanpin')" style="position:relative;"></li>
+        <li class="nn6 " onclick="javascript:location.replace('/a/shengchancuoshi')"></li>
+        <li class="nn7 " onclick="javascript:location.replace('/a/lianxiwomen')"></li>
+      </ul>
+      <script language="javascript">
+	$('.divNav ul li').hover(function(){
+	    $(this).find('.subnav').show();
+	},function(){
+	    $(this).find('.subnav').hide();
+	});
+	</script> 
+    </div>
+  </div>
+</div>
+<div class="box">
+  <div class="fl" style="width:665px;height:583px;"><img id="imgh" src="/skin/images/cz_no.png" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_1.png','in_1')" onmouseout="back()" shape="poly" coords="71,89,68,98,189,76,337,49,358,47,439,67,486,79,526,89,556,97,575,101,585,104,587,95,570,89,534,78,488,67,425,50,379,39,357,35" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_2.png','in_2')" onmouseout="back()" shape="poly" coords="68,98,100,105,116,107,131,108,160,110,186,112,355,93,359,91,393,99,480,113,521,107,551,102,581,102,520,88,457,73,395,58,357,48" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_3.png','in_3')" onmouseout="back()" shape="poly" coords="68,191,69,200,192,209,279,217,354,223,514,220,579,217,579,206,527,203,371,198,349,196" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_4.png','in_4')" onmouseout="back()" shape="poly" coords="69,214,236,215,353,223,426,224,499,228,578,234,578,239,456,248,354,256,186,234,105,224,70,220" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_5.png','in_5')" onmouseout="back()" shape="poly" coords="160,254,106,259,107,289,349,357,533,315,536,280,477,271,354,288" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_6.png','in_6')" onmouseout="back()" shape="poly" coords="125,296,71,299,72,330,349,441,568,362,569,329,518,319,349,357" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_7.png','in_7')" onmouseout="back()" shape="poly" coords="96,342,74,346,73,349,347,474,567,386,565,379,540,375,348,442" href="javascript:void(0)" />
+      <area onmouseover="show('http://www.dreammaster.net/static/images/cz_8.png','in_8')" onmouseout="back()" shape="poly" coords="138,382,74,396,345,548,561,435,498,415,347,476" href="javascript:void(0)" />
+    </map>
+  </div>
+  <div class="fr" style="width:387px;height:483px;padding-top:100px;background:#595757;text-align:center;">
+    <div class="inimg" id="in_0" style="display:block"><img src="/skin/images/cz0.jpg" /></div>
+    <div class="inimg" id="in_1"><img src="/skin/images/cz1.jpg" /></div>
+    <div class="inimg" id="in_2"><img src="/skin/images/cz2.jpg" /></div>
+    <div class="inimg" id="in_3"><img src="/skin/images/cz3.jpg" /></div>
+    <div class="inimg" id="in_4"><img src="/skin/images/cz4.jpg" /></div>
+    <div class="inimg" id="in_5"><img src="/skin/images/cz5.jpg" /></div>
+    <div class="inimg" id="in_6"><img src="/skin/images/cz6.jpg" /></div>
+    <div class="inimg" id="in_7"><img src="/skin/images/cz7.jpg" /></div>
+    <div class="inimg" id="in_8"><img src="/skin/images/cz8.jpg" /></div>
+  </div>
+  <div class="cf"></div>
+</div>
+<script language="javascript">
+function show(u1,u2){
+    $('#imgh').attr('src',u1);
+	$('.inimg').hide();
+	$('#'+u2).show();
+}
+function back(){
+    $('#imgh').attr('src','/skin/images/cz_no.png');
+    $('.inimg').hide();
+	$('#in_0').show();
+}
+</script>
+<div class="divFoot">
+   <div style="float:left; width:230px; height:40px; cursor:pointer;" onclick="window.open('http://www.dedemao.com/', '_blank')"></div>
+</div>
+</body>
+</html>

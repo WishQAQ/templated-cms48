@@ -1,0 +1,5 @@
+INSERT INTO `dede_addonarticle` VALUES('1','7','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle` VALUES('2','7','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle` VALUES('3','7','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle` VALUES('4','7','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle` VALUES('5','7','','','','127.0.0.1');

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幻灯3_简单大气优尚家具类企业织梦模板</title>
+<meta name="keywords" content="幻灯,幻灯," />
+<meta name="description" content="" />
+<link href="/skin/css/css.css" rel="stylesheet" type="text/css" />
+<script src="/skin/js/jquery172.min.js" type="text/javascript"></script>
+<script src="/skin/js/slide.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="javascript">
+document.onkeydown=function(){if(event.ctrlKey){return false;}}
+document.onselectstart=function(){return false;}
+document.oncontextmenu=function(){return false;}
+</SCRIPT>
+</head>
+<body>
+<div class="logo"><img src="/skin/images/logo.png" /></div>
+<div style="float:left; width:100%;">
+  <div style="width:1101px; margin-left:auto; margin-right:auto;">
+    <div class="divNav" style="position:relative;z-index:9999;">
+      <ul>
+        <li class="nn1 cur" onclick="javascript:location.replace('/index.html')"></li>
+        <li class="nn2 " onclick="javascript:location.replace('/a/pinpailishi')"></li>
+        <li class="nn3 " onclick="javascript:location.replace('/a/gongsilinian')"></li>
+        <li class="nn4 " onclick="javascript:location.replace('/a/jingxuancaizhi')"></li>
+        <li class="nn5 " onclick="javascript:location.replace('/a/womendechanpin')" style="position:relative;"></li>
+        <li class="nn6 " onclick="javascript:location.replace('/a/shengchancuoshi')"></li>
+        <li class="nn7 " onclick="javascript:location.replace('/a/lianxiwomen')"></li>
+      </ul>
+      <script language="javascript">
+	$('.divNav ul li').hover(function(){
+	    $(this).find('.subnav').show();
+	},function(){
+	    $(this).find('.subnav').hide();
+	});
+	</script> 
+    </div>
+  </div>
+</div>
+<div class="box">
+  <div class="probox">
+    <div id="proshow" class="proshow">
+      <ul>
+        <h1><img src="/skin/images/1_left.jpg" width="32" height="582" alt="" /></h1>
+        <li><img src="/skin/images/1_right.jpg" width="903" height="582" alt="" /></li>
+        <h1><img src="/skin/images/2_left.jpg" width="32" height="582" alt="" /></h1>
+        <li style="width:0"><img src="/skin/images/2_right.jpg" width="903" height="582" alt="" /></li>
+        <h1><img src="/skin/images/3_left.jpg" width="32" height="582" alt="" /></h1>
+        <li style="width:0"><img src="/skin/images/3_right.jpg" width="903" height="582" alt="" /></li>
+        <h1><img src="/skin/images/4_left.jpg" width="32" height="582" alt="" /></h1>
+        <li style="width:0"><img src="/skin/images/4_right.jpg" width="903" height="582" alt="" /></li>
+        <h1><img src="/skin/images/5_left.jpg" width="32" height="582" alt="" /></h1>
+        <li style="width:0"><img src="/skin/images/5_right.jpg" width="903" height="582" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script language="javascript">
+//jQuery(".probox").slide({ titCell:".#proshow h1", targetCell:"#proshow ul li", effect:"left",autoPlay:false,trigger:"click" });
+$(document).ready(function(){	
+	$('.proshow ul h1').click(function(){
+		if($(this).attr('class') == 'clicked'){	        
+            $(this).next('li').animate({width:'903px'},'slow');
+			$(this).next('li').nextAll('li').animate({width:'0'},'slow');
+            $(this).nextAll('h1').removeClass('clicked');
+        }else{
+		    $(this).next('li').animate({width:'903px'},'slow');
+		    $(this).prevAll('li').animate({width:'0'},'slow');
+			$(this).prevAll('h1').addClass('clicked');
+		}     		
+	});
+});
+</script>
+<div class="divFoot">
+  <div style="float:left; width:230px; height:40px; cursor:pointer;" onclick="window.open('http://www.dedemao.com/', '_blank')"></div>
+</div>
+</body>
+</html>
